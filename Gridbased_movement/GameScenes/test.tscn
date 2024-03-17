@@ -1,0 +1,115 @@
+[gd_scene load_steps=4 format=3 uid="uid://dlgonfxvv70uj"]
+
+[ext_resource type="PackedScene" uid="uid://by3pmc2iaku78" path="res://GameObjects/Player/player.tscn" id="1_iiooa"]
+[ext_resource type="Texture2D" uid="uid://dsoxmyobt0w5u" path="res://icon.svg" id="2_d8ubf"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_slptn"]
+size = Vector3(18.1456, 0.5, 50.3153)
+
+[node name="Test" type="Node3D"]
+
+[node name="Player" parent="." instance=ExtResource("1_iiooa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="floor" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.55524, -0.25, 3.82086)
+shape = SubResource("BoxShape3D_slptn")
+
+[node name="sprites" type="Node3D" parent="floor"]
+
+[node name="Sprite3D" type="Sprite3D" parent="floor/sprites"]
+transform = Transform3D(1.51, 0, 0, 0, -6.60042e-08, 1, 0, -1.51, -4.37114e-08, 0, 0, 0)
+texture = ExtResource("2_d8ubf")
+
+[node name="Sprite3D5" type="Sprite3D" parent="floor/sprites"]
+transform = Transform3D(1.51, 0, 0, 0, -6.60042e-08, 1, 0, -1.51, -4.37114e-08, 0, 0, 2)
+texture = ExtResource("2_d8ubf")
+
+[node name="Sprite3D6" type="Sprite3D" parent="floor/sprites"]
+transform = Transform3D(1.51, 0, 0, 0, -6.60042e-08, 1, 0, -1.51, -4.37114e-08, 0, 0, 4)
+texture = ExtResource("2_d8ubf")
+
+[node name="Sprite3D7" type="Sprite3D" parent="floor/sprites"]
+transform = Transform3D(1.51, 0, 0, 0, -6.60042e-08, 1, 0, -1.51, -4.37114e-08, 0, 0, 6)
+texture = ExtResource("2_d8ubf")
+
+[node name="Sprite3D2" type="Sprite3D" parent="floor/sprites"]
+transform = Transform3D(1.51, 0, 0, 0, -6.60042e-08, 1, 0, -1.51, -4.37114e-08, 0, 0, -2)
+texture = ExtResource("2_d8ubf")
+
+[node name="Sprite3D3" type="Sprite3D" parent="floor/sprites"]
+transform = Transform3D(1.51, 0, 0, 0, -6.60042e-08, 1, 0, -1.51, -4.37114e-08, 0, 0, -4)
+texture = ExtResource("2_d8ubf")
+
+[node name="Sprite3D4" type="Sprite3D" parent="floor/sprites"]
+transform = Transform3D(1.51, 0, 0, 0, -6.60042e-08, 1, 0, -1.51, -4.37114e-08, 0, 0, -6)
+texture = ExtResource("2_d8ubf")
+
+[node name="Sprite3D8" type="Sprite3D" parent="floor/sprites"]
+transform = Transform3D(1.51, 0, 0, 0, -6.60042e-08, 1, 0, -1.51, -4.37114e-08, -2, 0, 0)
+texture = ExtResource("2_d8ubf")
+
+[node name="Sprite3D9" type="Sprite3D" parent="floor/sprites"]
+transform = Transform3D(1.51, 0, 0, 0, -6.60042e-08, 1, 0, -1.51, -4.37114e-08, -2, 0, 2)
+texture = ExtResource("2_d8ubf")
+
+[node name="Sprite3D10" type="Sprite3D" parent="floor/sprites"]
+transform = Transform3D(1.51, 0, 0, 0, -6.60042e-08, 1, 0, -1.51, -4.37114e-08, -2, 0, 4)
+texture = ExtResource("2_d8ubf")
+
+[node name="Sprite3D11" type="Sprite3D" parent="floor/sprites"]
+transform = Transform3D(1.51, 0, 0, 0, -6.60042e-08, 1, 0, -1.51, -4.37114e-08, -2, 0, 6)
+texture = ExtResource("2_d8ubf")
+
+[node name="Sprite3D12" type="Sprite3D" parent="floor/sprites"]
+transform = Transform3D(1.51, 0, 0, 0, -6.60042e-08, 1, 0, -1.51, -4.37114e-08, -2, 0, -2)
+texture = ExtResource("2_d8ubf")
+
+[node name="Sprite3D13" type="Sprite3D" parent="floor/sprites"]
+transform = Transform3D(1.51, 0, 0, 0, -6.60042e-08, 1, 0, -1.51, -4.37114e-08, -2, 0, -4)
+texture = ExtResource("2_d8ubf")
+
+[node name="Sprite3D14" type="Sprite3D" parent="floor/sprites"]
+transform = Transform3D(1.51, 0, 0, 0, -6.60042e-08, 1, 0, -1.51, -4.37114e-08, -2, 0, -6)
+texture = ExtResource("2_d8ubf")
+
+[node name="Sprite3D15" type="Sprite3D" parent="floor/sprites"]
+transform = Transform3D(1.51, 0, 0, 0, -6.60042e-08, 1, 0, -1.51, -4.37114e-08, 2, 0, 0)
+texture = ExtResource("2_d8ubf")
+
+[node name="Sprite3D16" type="Sprite3D" parent="floor/sprites"]
+transform = Transform3D(1.51, 0, 0, 0, -6.60042e-08, 1, 0, -1.51, -4.37114e-08, 2, 0, 2)
+texture = ExtResource("2_d8ubf")
+
+[node name="Sprite3D17" type="Sprite3D" parent="floor/sprites"]
+transform = Transform3D(1.51, 0, 0, 0, -6.60042e-08, 1, 0, -1.51, -4.37114e-08, 2, 0, 4)
+texture = ExtResource("2_d8ubf")
+
+[node name="Sprite3D18" type="Sprite3D" parent="floor/sprites"]
+transform = Transform3D(1.51, 0, 0, 0, -6.60042e-08, 1, 0, -1.51, -4.37114e-08, 2, 0, 6)
+texture = ExtResource("2_d8ubf")
+
+[node name="Sprite3D19" type="Sprite3D" parent="floor/sprites"]
+transform = Transform3D(1.51, 0, 0, 0, -6.60042e-08, 1, 0, -1.51, -4.37114e-08, 2, 0, -2)
+texture = ExtResource("2_d8ubf")
+
+[node name="Sprite3D20" type="Sprite3D" parent="floor/sprites"]
+transform = Transform3D(1.51, 0, 0, 0, -6.60042e-08, 1, 0, -1.51, -4.37114e-08, 2, 0, -4)
+texture = ExtResource("2_d8ubf")
+
+[node name="Sprite3D21" type="Sprite3D" parent="floor/sprites"]
+transform = Transform3D(1.51, 0, 0, 0, -6.60042e-08, 1, 0, -1.51, -4.37114e-08, 2, 0, -6)
+texture = ExtResource("2_d8ubf")
+
+[node name="info" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="info"]
+offset_left = 38.0
+offset_top = 28.0
+offset_right = 262.0
+offset_bottom = 176.0
+text = "W = move forward
+A = turn left
+D = turn right"
